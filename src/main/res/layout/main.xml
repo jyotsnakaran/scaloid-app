@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical" >
+
+    <include layout="@layout/titlebar" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/print_test"
+                android:layout_width="120dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_number_violet_shape"
+                android:height="45dp"
+                style="@style/buttonNumberStyle"
+                android:orientation="horizontal"
+                android:text="@string/print_test"
+                android:width="120dp"
+                android:enabled="false" />
+
+            <View
+                android:layout_width="15dp"
+                android:layout_height="fill_parent" >
+            </View>
+
+            <Button
+                android:id="@+id/qrcode_verify"
+                android:layout_width="120dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                style="@style/buttonNumberStyle"
+                android:background="@drawable/button_number_violet_shape"
+                android:height="45dp"
+                android:orientation="horizontal"
+                android:text="@string/qrcode_verify"
+                android:width="120dp"
+                android:enabled="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/magnetic_card_btn"
+                android:layout_width="120dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_number_violet_shape"
+                android:height="45dp"
+                style="@style/buttonNumberStyle"
+                android:orientation="horizontal"
+                android:text="@string/magnetic_card_test"
+                android:width="120dp"
+                android:enabled="false" />
+
+            <View
+                android:layout_width="15dp"
+                android:layout_height="fill_parent" >
+            </View>
+
+            <Button
+                android:id="@+id/rfid_btn"
+                android:layout_width="120dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_number_violet_shape"
+                android:height="45dp"
+                style="@style/buttonNumberStyle"
+                android:orientation="horizontal"
+                android:text="@string/rfid_test"
+                android:width="120dp"
+                android:enabled="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/identity_btn"
+                android:layout_width="120dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_number_violet_shape"
+                android:height="45dp"
+                style="@style/buttonNumberStyle"
+                android:orientation="horizontal"
+                android:text="@string/identity_test"
+                android:width="120dp"
+                android:enabled="false" />
+
+            <View
+                android:layout_width="15dp"
+                android:layout_height="fill_parent" >
+            </View>
+
+            <Button
+                android:id="@+id/pcsc_btn"
+                android:layout_width="120dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_number_violet_shape"
+                android:height="45dp"
+                style="@style/buttonNumberStyle"
+                android:orientation="horizontal"
+                android:text="@string/pcsc_test"
+                android:enabled="false"
+                android:width="120dp" /> 
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/fingerPrint_btn"
+                android:layout_width="120dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_number_violet_shape"
+                android:height="45dp"
+                android:enabled="false"
+                style="@style/buttonNumberStyle"
+                android:orientation="horizontal"
+                android:text="@string/finger_test"
+                android:width="120dp" />
+
+            <View
+                android:layout_width="15dp"
+                android:layout_height="fill_parent" >
+            </View>
+
+            <Button
+                android:id="@+id/psam"
+                android:layout_width="120dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_number_violet_shape"
+                android:height="45dp"
+                style="@style/buttonNumberStyle"
+                android:orientation="horizontal"
+                android:text="@string/psam_test"
+                android:enabled="false"
+                android:width="120dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/hdmi_btn"
+                android:layout_width="120dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_number_violet_shape"
+                android:height="45dp"
+                style="@style/buttonNumberStyle"
+                android:orientation="horizontal"
+                android:text="@string/hdmi"
+                android:enabled="false"
+                android:width="120dp" />
+
+            <View
+                android:layout_width="15dp"
+                android:layout_height="fill_parent" >
+            </View>
+
+            <Button
+                android:id="@+id/moneybox_btn"
+                android:layout_width="120dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_number_violet_shape"
+                android:height="45dp"
+                style="@style/buttonNumberStyle"
+                android:orientation="horizontal"
+                android:text="@string/moneybox_test"
+                android:enabled="false"
+                android:width="120dp" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/ir_btn"
+                android:layout_width="120dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_number_violet_shape"
+                android:height="45dp"
+                style="@style/buttonNumberStyle"
+                android:orientation="horizontal"
+                android:text="@string/ir_test"
+                android:enabled="false"
+                android:width="120dp" />
+
+            <View
+                android:layout_width="15dp"
+                android:layout_height="fill_parent" >
+            </View>
+
+            <Button
+                android:id="@+id/led_btn"
+                android:layout_width="120dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_number_violet_shape"
+                android:height="45dp"
+                style="@style/buttonNumberStyle"
+                android:orientation="horizontal"
+                android:text="@string/led"
+                android:enabled="false"
+                android:width="120dp" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/decode_btn"
+                android:layout_width="120dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_number_violet_shape"
+                android:height="45dp"
+                style="@style/buttonNumberStyle"
+                android:orientation="horizontal"
+                android:text="@string/decode"
+                android:enabled="false"
+                android:width="120dp" />
+
+        </LinearLayout>
+        
+    </LinearLayout>
+
+</LinearLayout>

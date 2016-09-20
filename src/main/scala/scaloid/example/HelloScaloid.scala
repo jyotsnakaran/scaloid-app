@@ -7,13 +7,11 @@ import org.scaloid.common._
 class HelloScaloid extends SActivity with SContext {
 
   onCreate {
-
-
-    val a = new SImageView(R.drawable.primoris)
+    val primorisLogo = new SImageView(R.drawable.primoris)
 
     contentView = new SVerticalLayout {
 
-      a.here
+      primorisLogo.here
 
       setBackgroundColor(Color.WHITE)
       style {
@@ -22,13 +20,18 @@ class HelloScaloid extends SActivity with SContext {
         case e => e.backgroundColor(Color.YELLOW)
       }
 
+      lazy val swipeMagneticCard = new SButton("Magnetic Card").onClick{
+        val intent = SIntent[MagneticCardActivity]
+        startActivity(intent)
+      }
 
-      lazy val swipeMagneticCard = new SButton("Heyyy Click Me").onClick {
+      lazy val insertChip = new SButton("IC Card").onClick{
         val intent = SIntent[TestActivity]
         startActivity(intent)
       }
 
       swipeMagneticCard.here
+      insertChip.here
     }
   }
 }

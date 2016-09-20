@@ -17,8 +17,9 @@
   <uses-permission android:name="android.permission.WAKE_LOCK" />
 
 
-  <application android:label="" >
-    <activity android:name=".HelloScaloid" android:label="">
+  <application android:label="Scaloid App" >
+    <activity android:name=".HelloScaloid"
+              android:label="Payment App">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />
@@ -29,5 +30,4 @@
     <activity android:name=".TestActivity" android:label="Test ACtivity">
     </activity>
   </application>
-
 </manifest>

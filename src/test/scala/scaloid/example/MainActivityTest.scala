@@ -8,9 +8,9 @@ import org.robolectric.{Robolectric, RobolectricTestRunner}
 
 @RunWith(classOf[RobolectricTestRunner])
 @Config(manifest = "src/main/AndroidManifest.xml")
-class HelloScaloidTest {
+class MainActivityTest {
   @Test def testButtonPressed(): Unit = {
-    val activity = Robolectric.setupActivity(classOf[HelloScaloid])
+    val activity = Robolectric.setupActivity(classOf[MainActivity])
     assertTrue(activity.meToo.text == "Me too")
     activity.redBtn.performClick()
     assertTrue(activity.meToo.text == "PRESSED")

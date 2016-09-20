@@ -8,10 +8,16 @@ class TestActivity extends SActivity {
 
   onCreate {
     contentView = new SVerticalLayout{
+
+      val primorisLogo = new SImageView(R.drawable.primoris)
+      primorisLogo.here
+      setBackgroundColor(Color.WHITE)
+
       style {
-        case b: SButton => b.textColor(Color.RED)
-        case t: STextView => t textSize 10.dip
-        case e: SEditText => e.backgroundColor(Color.YELLOW).textColor(Color.BLACK)
+        case b: SButton => b.textColor(Color.GREEN)
+        case t: STextView => t textSize 15.dip
+          t.textColor(Color.BLACK)
+        case e => e.backgroundColor(Color.YELLOW)
       }
 
       lazy val testButton = new SButton("TEST Button").onClick{

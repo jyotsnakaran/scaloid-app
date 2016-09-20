@@ -18,16 +18,19 @@
 
 
   <application android:label="Scaloid App" >
-    <activity android:name=".HelloScaloid"
+    <activity android:name=".MainActivity"
               android:label="Payment App">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
-    <activity android:name=".MainActivity" android:label="Magnetic card">
+
+    <activity android:name=".MagneticCardActivity" android:label="Magnetic card">
     </activity>
-    <activity android:name=".TestActivity" android:label="Test ACtivity">
+
+    <activity android:name=".TestActivity" android:label="Test Activity">
     </activity>
+
   </application>
 </manifest>
